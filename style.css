@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 1440px;
+    background-color: hsl(0, 0%, 98%);
+}
+.bold {
+    font-weight: 600;
+}
+
+.light {
+    font-weight: 400;
+}
+
+p {
+    font-size: 15px;
+    color: hsl(229, 6%, 66%);
+}
+
+.main-container {
+    margin: 40px 40px;
+}
+
+.intro {
+    width: 40%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1, h3 {
+    color: hsl(234, 12%, 34%);
+}
+
+h1 {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.grid-container {
+ display: grid;
+ grid-template-columns: 30% 30% 30%;
+ grid-template-rows: 280px 280px;
+ grid-gap: 40px 40px;
+ justify-content: center;
+ align-items: center;
+}
+
+.grid-item {
+    position: relative;
+    background-color: white;
+    padding: 30px;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 280px;
+}
+
+.item1 {
+    grid-area: 1 / 1 / 3 / 2;
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+
+.item2 {
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+
+.item3 {
+    grid-area: 1 / 3 / 3 / 4;
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+.item4 {
+    border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+svg {
+    position: absolute;
+    top: 170px;
+    right: 60px;
+}
+
+footer {
+    margin-top: 50px;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media (max-width: 375px) {
+
+    body {
+        width: 375px;
+    }
+
+    .main-container {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .intro {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .grid-container {
+        margin: 10px auto;
+        width: 90%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 300px 300px 300px 300px;
+        grid-gap: 20px 20px;
+       }
+
+    .item1 {
+        grid-area: 1 / 1;
+    }
+    
+    .item2 {
+        grid-area: 2 / 1;
+    }
+    
+    .item3 {
+        grid-area: 3 / 1;
+    }
+    
+    .item4 {
+        grid-area: 4 / 1;
+    }
+    
+}
